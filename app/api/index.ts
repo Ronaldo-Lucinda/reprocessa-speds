@@ -1,11 +1,13 @@
 import express, { Express, Request, Response } from 'express';
-import { reprocessarArquivo } from './src/reprocessa-arquivo';
+import { reprocessarArquivo } from './src/reprocessa-arquivo/index';
 
 const servidor = express();
 
 servidor.get('/', (req: Request, res: Response) => {
     res.send('Hello World!').end();
 })
+
+//console.log(process.argv[1])
 
 servidor.get('/reprocessa-arquivo', (req: Request, res: Response) => {
     res.send('reprocessa-arquivo').end();
