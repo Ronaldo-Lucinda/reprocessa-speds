@@ -22,9 +22,10 @@
       "es2020",
       "dom"
     ],
-    "esModuleInterop":true
+    "esModuleInterop":true,
   },
   "angularCompilerOptions": {
+    "experimentalDecorators": true,
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
