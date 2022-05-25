@@ -1,5 +1,5 @@
 import express, { Express, Request, Response } from 'express';
-import { reprocessarArquivo } from './src/reprocessa-arquivo/index';
+import { reprocessarArquivo } from './src/reprocessa-arquivo/';
 
 const servidor = express();
 
