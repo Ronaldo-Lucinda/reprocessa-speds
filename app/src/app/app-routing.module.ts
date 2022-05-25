@@ -7,7 +7,14 @@ import { PastaArquivosComponent } from 'src/app/pages/pasta-arquivos/pasta-arqui
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'sped',
+        loadChildren: () => import('../pages/reprocessa-sped-contribuicao/reprocessa-sped-contribuicao.module')
+          .then(modulo => modulo.ReprocessaSpedContribuicaoModule)
+      }
+    ]
   }
 ];
 
